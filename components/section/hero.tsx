@@ -4,7 +4,7 @@ export function Hero() {
 	return (
 		<div className="my-6 flex flex-col gap-y-3">
 			<h1 className="font-medium text-foreground">The SaaS Starter You Need</h1>
-			<p className="text-[15px">
+			<p>
 				Whelve is a robust foundation for your product launch, built with focus
 				on{" "}
 				<a
@@ -16,7 +16,7 @@ export function Hero() {
 				</a>
 				, scalability, and security in mind.
 			</p>{" "}
-			<p className="text-[15px]">
+			<p>
 				Deploy on{" "}
 				<a
 					rel="noreferrer"

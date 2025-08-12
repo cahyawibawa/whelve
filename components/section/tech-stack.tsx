@@ -168,7 +168,7 @@ export const TechStack = () => {
 
 	return (
 		<div className="py-1">
-			<p className="text-[15px]">Powered by robust tech stack:</p>
+			<p>Powered by robust tech stack:</p>
 			<div className="relative mt-6 w-full">
 				<div className="absolute inset-0">{intersections}</div>
 				<div
@@ -208,7 +208,10 @@ export const TechStack = () => {
 const ScrambleText = ({
 	text,
 	className = "text-2xl font-bold tracking-wide",
-}: { text: string; className?: string }) => {
+}: {
+	text: string;
+	className?: string;
+}) => {
 	const { ref } = useScramble({
 		text,
 		speed: 0.8,
