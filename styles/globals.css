@@ -147,7 +147,6 @@
 
 	body {
 		@apply bg-background text-foreground;
-		/* font-feature-settings: "rlig" 1, "calt" 1; */
 		font-synthesis-weight: none;
 		text-rendering: optimizeLegibility;
 		font-variant-ligatures: common-ligatures;
@@ -169,7 +168,8 @@
 		}
 	}
 	p {
-		line-height: 1.65;
+		line-height: 24px;
+		letter-spacing: -0.09px;
 	}
 	ol,
 	ul,
@@ -183,6 +183,10 @@
 		border-left-width: 2px;
 		border-color: var(--muted);
 		padding-left: 12px;
+	}
+	button:not(:disabled),
+	[role="button"]:not(:disabled) {
+		cursor: pointer;
 	}
 }
 
@@ -251,26 +255,54 @@
 				transparent 12px,
 				transparent 16px
 			);
-		background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
-		background-position: 0 0, 0 0, 100% 0, 0 100%;
+		background-size:
+			1px 100%,
+			100% 1px,
+			1px 100%,
+			100% 1px;
+		background-position:
+			0 0,
+			0 0,
+			100% 0,
+			0 100%;
 		background-repeat: no-repeat;
 	}
 	.dashed-box-x-t {
-		background-size: 1px 100%, 100% 1px, 1px 100%, 0 0;
+		background-size:
+			1px 100%,
+			100% 1px,
+			1px 100%,
+			0 0;
 	}
 	.dashed-box-x-b {
-		background-size: 1px 100%, 0 0, 1px 100%, 100% 1px;
+		background-size:
+			1px 100%,
+			0 0,
+			1px 100%,
+			100% 1px;
 	}
 	.dashed-box-y-l {
-		background-size: 1px 100%, 100% 1px, 0 0, 100% 1px;
+		background-size:
+			1px 100%,
+			100% 1px,
+			0 0,
+			100% 1px;
 	}
 	.dashed-box-l-t {
-		background-size: 1px 100%, 100% 1px, 0 0, 0 0;
+		background-size:
+			1px 100%,
+			100% 1px,
+			0 0,
+			0 0;
 	}
 }
 
 @media (min-width: 1024px) {
 	.lg\:dashed-box-y-l {
-		background-size: 1px 100%, 100% 1px, 0 0, 100% 1px;
+		background-size:
+			1px 100%,
+			100% 1px,
+			0 0,
+			100% 1px;
 	}
 }
